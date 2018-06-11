@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import RaisedButton from "material-ui/RaisedButton";
-import Menu from "../containers/Menu";
+import React from 'react';
+import PropTypes from 'prop-types';
+import RaisedButton from 'material-ui/RaisedButton';
+import Menu from '../containers/Menu';
 
 const AppB = props => (
   <div>
@@ -16,8 +16,8 @@ AppB.propTypes = {
 };
 
 AppB.defaultProps = {
-  buttonText: "defaultText",
-  onClick: () => console.log("default click action")
+  buttonText: 'defaultText',
+  onClick: () => console.log('default click action')
 };
 
 export default AppB;

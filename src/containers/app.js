@@ -1,7 +1,7 @@
-import { connect } from "react-redux";
-import actions from "../actions/";
+import { connect } from 'react-redux';
+import actions from '../actions/';
 
-import TheComponent from "../components/app";
+import TheComponent from '../components/app';
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -12,11 +12,14 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClick: () => {
-      dispatch({ type: actions.BASIC_ACTION, text: "new text" });
+      dispatch({ type: actions.BASIC_ACTION, text: 'new text' });
     }
   };
 };
 
-const App = connect(mapStateToProps, mapDispatchToProps)(TheComponent);
+const App = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(TheComponent);
 
 export default App;
