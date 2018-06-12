@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import NavBar from './NavBar/NavBar';
+import ChatBox from '../containers/ChatBox/ChatBox';
+import TextBox from '../containers/TextBox/TextBox';
 
 const App = props => (
   <div>
-    <NavBar />
-    <div>Video Section</div>
-    <div>Review Section</div>
-    <footer>Footer area</footer>
+    <nav>Nav Area</nav>
+    <ChatBox />
+    <TextBox />
+    <footer>Footer Area</footer>
   </div>
 );
 

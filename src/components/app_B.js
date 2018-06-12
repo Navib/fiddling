@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import RaisedButton from 'material-ui/RaisedButton';
-import Menu from '../containers/Menu';
 
 const AppB = props => (
   <div>
-    <Menu />
     <RaisedButton label={props.buttonText} onClick={props.onClick} />
   </div>
 );
