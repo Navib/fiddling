@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -21,26 +21,28 @@ const styles = theme => ({
   }
 });
 
-class TextBox extends React.Component {
-  state = {
-    multiline: '',
-    message: ''
-  };
+class TextBox extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      multiline: '',
+      message: ''
+    };
+  }
 
-  handleChange = event => {
+  handleChange(event) {
     this.setState({ message: event.target.value });
-  };
+  }
 
-  handleSubmit = event => {
+  handleSubmit(event) {
     event.preventDefault();
 
     // this.props.saveComment(this.state.message);
 
     this.setState({ message: '' });
-  };
+  }
 
   render() {
-    console.log('textbox', this.props);
     const { classes } = this.props;
 
     return (
