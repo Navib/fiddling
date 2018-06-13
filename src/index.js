@@ -16,7 +16,6 @@ import './styles/main.scss';
 import './assets/Rick.png';
 
 import App from './containers/app';
-import Profile from './components/Profile';
 
 ReactDOM.render(
   <MuiThemeProvider muiTheme={muiTheme}>

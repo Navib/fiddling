@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Route } from 'react-router-dom';
 import ChatBox from '../containers/ChatBox/ChatBox';
 import TextBox from '../containers/TextBox/TextBox';
-import Profile from '../components/Profile';
+import Profile from '../components/Pages/Profile';
 
 const App = props => (
   <div>

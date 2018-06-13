@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import requireAuth from './HOC/requireAuth';
+import requireAuth from '../HOC/requireAuth';
 
 const Profile = props => (
   <div>
