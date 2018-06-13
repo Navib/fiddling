@@ -57,7 +57,7 @@ class TextBox extends Component {
             className={classes.container}
             noValidate
             autoComplete="off"
-            onClick={this.handleSubmit}
+            onClick={event => this.handleSubmit(event)}
           >
             <TextField
               id="multiline-flexible"
@@ -66,7 +66,7 @@ class TextBox extends Component {
               rows={2}
               rowsMax={4}
               value={this.state.message}
-              onChange={this.handleChange}
+              onChange={event => this.handleChange(event)}
               className={classes.textField}
             />
             <Button
