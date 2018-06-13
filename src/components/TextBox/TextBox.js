@@ -48,7 +48,7 @@ class TextBox extends Component {
     return (
       <Grid
         container
-        spacing={24}
+        spacing={0}
         alignContent={'center'}
         justify={'flex-start'}
       >

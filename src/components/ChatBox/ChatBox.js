@@ -21,7 +21,7 @@ function ChatBox(props) {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={24} alignContent={'center'} justify={'center'}>
+      <Grid container spacing={0} alignContent={'center'} justify={'center'}>
         <Grid item xs={10}>
           <List>
             {props.message.map((msg, i) => <ListItem key={i}>{msg}</ListItem>)}
